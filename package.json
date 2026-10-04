@@ -1,0 +1,17 @@
+{
+  "name": "paperclip-plugins",
+  "private": true,
+  "version": "0.1.0",
+  "packageManager": "pnpm@10.28.2",
+  "engines": {
+    "node": ">=24.11.0"
+  },
+  "scripts": {
+    "build": "pnpm -r build",
+    "typecheck": "pnpm -r typecheck",
+    "test": "pnpm -r test",
+    "check": "pnpm typecheck && pnpm test && pnpm build",
+    "dev": "pnpm --filter paperclip-plugin-starter dev",
+    "dev:ui": "pnpm --filter paperclip-plugin-starter dev:ui"
+  }
+}
